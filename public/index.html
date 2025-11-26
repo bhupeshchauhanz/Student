@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Student Record Manager</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="dashboard-container">
+    <aside class="sidebar">
+      <div class="brand">
+        <h2>EduManager</h2>
+      </div>
+      <nav class="nav-menu">
+        <a href="#" class="nav-item active">
+          <span class="icon">👥</span> Students
+        </a>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <header class="top-bar">
+        <h1>Student Records</h1>
+      </header>
+
+      <div class="content-wrapper">
+        <div class="action-bar">
+          <div class="search-box">
+            <input id="searchId" placeholder="Search by ID...">
+            <button id="getById" class="btn-icon">🔍</button>
+          </div>
+          <div class="add-form">
+            <input id="name" placeholder="Full Name">
+            <input id="marks" type="number" placeholder="Marks">
+            <button id="add" class="btn-primary">+ Add Student</button>
+          </div>
+        </div>
+
+        <div class="table-card">
+          <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Marks</th>
+                <th>Status</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="list">
+              <!-- Rows injected here -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
